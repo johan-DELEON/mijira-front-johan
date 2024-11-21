@@ -1,0 +1,73 @@
+.container-sidebar {
+  width: 100%;
+  height: auto;
+  grid-area: aside;
+  background: transparent; /* Fondo semi-transparente */
+  border-top-right-radius: 24px;
+  padding: 42px 24px;
+  gap: 56px;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #fff;
+  backdrop-filter: blur(100px); /* Desenfoque del fondo detrás del sidebar */
+  -webkit-backdrop-filter: blur(100px); /* Compatibilidad con Safari */
+  box-shadow: 0 4px 10px rgb(5%); /* Sombra opcional */
+}
+
+.bottom{
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 2px;
+}
+
+.bottom1{
+  color: rgb(255, 255, 255);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+  height: 962px;
+  width: 200px;
+}
+
+.container-lista {
+  width: 152px;
+  height: 264px;
+  gap: 16px;
+}
+
+.menu--lista {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.menu--lista .item {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  color: rgb(255, 255, 255);
+}
+
+.menu--lista .item:hover {
+  width: 152px;
+  height: 40px;
+  border-radius: 100px;
+  background : transparent;
+  border: 2px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  gap: 9px;
+  transition: border-color 0.3s ease;
+  border: 3px solid;
+}

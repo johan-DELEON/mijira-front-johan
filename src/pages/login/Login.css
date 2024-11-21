@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+.login-body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "Lexend" , sans-serif;
+    overflow: hidden;
+    background: transparent;
+    width: 100%;
+    height: 100vh;
+}
+/* contenedor principal del login*/
+.content-login {
+    background-image: url(/src/assets/images/Frame\ 72.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+/* Seccion de login */
+.section-login {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width: 500px;
+   width: 100%;
+}
+/*este es el formulario del login */
+.form {
+    background: rgba(64, 36, 173, 0.3);
+    backdrop-filter: blur(70px);
+    padding: 32px;
+    border-radius: 24px;
+    width: 100%;
+    height: 385px;
+    margin-top: -8px;
+    box-shadow: 0 0 1px 0 #fff;
+    gap: 16px;
+}
+.section-login form {
+    padding: 8px;   
+    border-radius: 32px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    padding: 14px 5px;
+    width:500px;
+    height: 400px;
+}
+.text-login {
+    border-bottom: 2px solid #fff;
+    margin-top: -2px;
+}
+.grup {
+    display: block;
+    gap: 16px;
+}
+.grup-user input{
+    display: block;
+}
+.grup-pass input{
+    display: block;
+}
+input {
+    width: 100%;
+    list-style: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 17.5px;
+    color: #000;
+    font: 18px;
+    text-indent: 12px;
+}
+input::placeholder {
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 17.5px;
+   color: #373737;
+}
+
+.grup {
+    display: block;
+ 
+}
+.grup-input {
+    width: 430px;
+    padding: 8px;
+}
+.grup-input input {
+   border-bottom-right-radius: 16px;
+   border-bottom-left-radius: 16px;
+   padding: 8px;
+   border: none;
+}
+.grup-label {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    padding: 0px 20px;
+    backdrop-filter: blur(100px);
+    background: rgba(255, 255, 255, 0.2) ;
+    display: flex;
+    font-size: 18px;
+}
+label{
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+.btn {
+   display: flex;
+   justify-content: space-around;
+   padding: 10px 10px;
+   gap: 10px;
+   
+}
+.btn button {
+    border-radius: 24px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+}
+.btn .login  {
+    width: 50%;
+    background: #4024AD;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Lexend";
+    padding: 12px 0px; 
+}
+.btn .create  {
+    width: 50%;
+    color: #fff;
+    background: transparent;
+    font-family: "Lexend";
+
+    
+}
+.link {
+    text-align: center;
+}
+.link a{
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    padding: 10px 10px;
+}
+.icon {
+    padding: 12px 10px 0px 0px;
+}
+
+@media screen and (max-width: 370px){
+    .content-login {
+       height: 90%;
+    }
+    
+}
+

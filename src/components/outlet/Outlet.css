@@ -1,0 +1,8 @@
+.mainFullLayout {
+  grid-area: main;
+}
+
+.mainChildren {
+  margin: auto;
+  max-width: 1346px ;
+}

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh !important;
+}
+
+#root {
+  height: 100vh !important;
+}
+
+body {
+  height: 100vh !important;
+  font-family: "Lexend";
+  background-image: url("./assets/images/Frame.svg");
+  background-repeat: repeat-y;
+  background-size: cover;
+}

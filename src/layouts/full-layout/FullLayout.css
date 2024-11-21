@@ -1,0 +1,13 @@
+.fullLayout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header header header"
+    "aside main main";
+  height: 100vh;
+}
+
+.mainFullLayout {
+  grid-area: main;
+}
