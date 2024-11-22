@@ -9,8 +9,6 @@
   border-top: 2px solid #ffffff;
   border-right: 2px solid #fff;
   backdrop-filter: blur(100px); /* Desenfoque del fondo detrás del sidebar */
-  -webkit-backdrop-filter: blur(100px); /* Compatibilidad con Safari */
-  box-shadow: 0 4px 10px rgb(5%); /* Sombra opcional */
 }
 
 .bottom{

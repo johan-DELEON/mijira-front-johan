@@ -6,21 +6,20 @@ import IconTableros from "../icons/IconTableros";
 import IconTareas from "../icons/IconTareas";
 
 const SidebarMenu = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
-  const bottomIcon = () => {
+  const bottomMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div className={`container-sidebar ${isOpen ? "open" : "closed"}`}>
+    <div className={`container-sidebar ${isOpen ? "" : "closed"}`}>
+      <div className="bottom1" onClick={bottomMenu}>
+        <IconMenu />
+      </div>
+
       <div className="menu">
         <div className="container-lista">
-          <div className="bottom">
-            <Link to="/" className="bottom1" onClick={bottomIcon}>
-              <IconMenu />
-            </Link>
-          </div>
           <div className="menu--lista">
             <Link to="/" className="item">
               <IconTableros />
@@ -33,14 +32,6 @@ const SidebarMenu = () => {
             <Link to="/" className="item">
               <IconTareas />
               Tareas
-            </Link>
-            <Link to="/" className="item">
-              <IconTableros />
-              Tableros
-            </Link>
-            <Link to="/" className="item">
-              <IconTableros />
-              Tableros
             </Link>
           </div>
         </div>
