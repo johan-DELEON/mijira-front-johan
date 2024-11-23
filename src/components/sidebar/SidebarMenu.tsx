@@ -17,7 +17,7 @@ const SidebarMenu = () => {
       <div className="bottom1" onClick={bottomMenu}>
         <IconMenu />
       </div>
-
+      {isOpen &&
       <div className="menu">
         <div className="container-lista">
           <div className="menu--lista">
@@ -36,6 +36,7 @@ const SidebarMenu = () => {
           </div>
         </div>
       </div>
+}
     </div>
   );
 };

@@ -1,45 +1,54 @@
+/* Sidebar inicialmente abierto */
 .container-sidebar {
-  width: 100%;
-  height: auto;
+  position: relative;
+  width: 200px; /* Ancho del sidebar abierto */
+  height: 100vh;
   grid-area: aside;
-  background: transparent; /* Fondo semi-transparente */
+  background: transparent;
   border-top-right-radius: 24px;
-  padding: 42px 24px;
-  gap: 56px;
   border-top: 2px solid #ffffff;
   border-right: 2px solid #fff;
-  backdrop-filter: blur(100px); /* Desenfoque del fondo detrás del sidebar */
+  backdrop-filter: blur(100px);
+  overflow: hidden;
+  transition: width 0.3s ease-in-out; /* Transición suave */
 }
 
-.bottom{
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
-  border: 2px;
+/* Sidebar cerrado */
+.container-sidebar.closed {
+  width: 60px; /* Ancho del sidebar cerrado */
 }
 
-.bottom1{
-  color: rgb(255, 255, 255);
+.bottom1 {
+  position: absolute;
+  top: 20px;
+  left: 10px; /* Mantener el botón fijo */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  gap: 2.3rem;
-  height: 962px;
-  width: 200px;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 80px 16px 0 16px; /* Ajustar espacio del contenido del menú */
 }
 
 .container-lista {
-  width: 152px;
-  height: 264px;
-  gap: 16px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .menu--lista {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 15px;
 }
 
 .menu--lista .item {
@@ -50,22 +59,14 @@
   gap: 16px;
   text-decoration: none;
   padding: 10px;
-  border-radius: 10px;
-  transition: 0.3s ease-in-out;
+  border-radius: 100px;
+  transition: 0.3s ease;
   color: rgb(255, 255, 255);
 }
 
 .menu--lista .item:hover {
-  width: 152px;
-  height: 40px;
-  border-radius: 100px;
-  background : transparent;
-  border: 2px;
-  padding-top: 8px;
-  padding-right: 8px;
-  padding-bottom: 16px;
-  padding-left: 16px;
-  gap: 9px;
-  transition: border-color 0.3s ease;
-  border: 3px solid;
+  
+  background: rgba(255, 255, 255, 0.1); 
+  border-color: white;
+  /* Fondo al pasar el mouse */
 }
