@@ -17,6 +17,7 @@
   padding-right: 24px;
   gap: 24px;
 }
+
 .logo-header {
   display: flex;
   align-items: center;
@@ -24,6 +25,7 @@
   font-weight: bold;
   text-decoration: none;
 }
+
 .logo-link {
   font-size: 20px;
   font-weight: bold;
@@ -34,8 +36,23 @@
   border-radius: 100px;
   transition: all 0.3 ease;
 }
+
 .icon {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bottom1 {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 2;
 }

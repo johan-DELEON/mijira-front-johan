@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
 import { useState } from "react";
-import IconMenu from "../icons/IconMenu";
 import IconTableros from "../icons/IconTableros";
 import IconTareas from "../icons/IconTareas";
+import IconRoles from "../icons/IconRoles";
 
 const SidebarMenu = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -14,24 +14,24 @@ const SidebarMenu = () => {
 
   return (
     <div className={`container-sidebar ${isOpen ? "" : "closed"}`}>
-      <div className="bottom1" onClick={bottomMenu}>
-        <IconMenu />
-      </div>
       {isOpen &&
       <div className="menu">
         <div className="container-lista">
           <div className="menu--lista">
-            <Link to="/" className="item">
+            
+            <Link to="/" className="item" onClick={bottomMenu}>
               <IconTableros />
               Tableros
             </Link>
-            <Link to="/" className="item">
+            <hr />
+            <Link to="/" className="item" onClick={bottomMenu}>
               <IconTareas />
-              Tableros
+              Backlog
             </Link>
-            <Link to="/" className="item">
-              <IconTareas />
-              Tareas
+            <hr />
+            <Link to="/" className="item" onClick={bottomMenu}>
+              <IconRoles />
+              Roles
             </Link>
           </div>
         </div>
