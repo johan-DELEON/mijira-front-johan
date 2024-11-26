@@ -15,7 +15,7 @@
 
 /* Sidebar cerrado */
 .container-sidebar.closed {
-  width: 60px; /* Ancho del sidebar cerrado */
+  width: 90px; /* Ancho del sidebar cerrado */
 }
 
 .menu {
@@ -52,6 +52,20 @@
 }
 
 .menu--lista .item:hover {
-  background: rgba(255, 255, 255, 0.1); /* Fondo al pasar el mouse */
-  border-color: rgba(255, 255, 255, 1); /* Borde blanco al pasar el mouse */
+  background: rgba(255, 255, 255, 0.1); 
+  border-color: rgba(255, 255, 255, 1); 
+}
+
+/* Textos ocultos cuando el sidebar está cerrado */
+.container-sidebar.closed .item-text {
+  display: none; 
+  border-radius: 150%; 
+  padding: 10px; 
+  justify-content: center; 
+  gap: 0; 
+}
+
+.container-sidebar.closed .menu--lista .item:hover {
+  background: rgba(255, 255, 255, 0.2); 
+  border-color: rgba(255, 255, 255, 0.8); 
 }

@@ -6,21 +6,21 @@ import IconMenu from "../icons/IconMenu";
 import { useState } from "react";
 
 const Header = () => {
-
- 
   const [isSidebarClosed, setSidebarClosed] = useState(false);
-  
-  const buttomSidebar = () => {
+
+  // Alternar el estado del sidebar
+  const toggleSidebar = () => {
     setSidebarClosed(!isSidebarClosed);
     const sidebar = document.querySelector(".container-sidebar");
-    if (sidebar){
+    if (sidebar) {
       sidebar.classList.toggle("closed");
     }
   };
-  
+
   return (
     <div className="container-header">
-      <div className="bottom1" onClick={buttomSidebar}>
+      {/* Botón del menú */}
+      <div className="bottom1" onClick={toggleSidebar}>
         <IconMenu />
       </div>
       <div className="logo-header">
