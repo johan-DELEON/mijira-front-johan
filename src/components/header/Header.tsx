@@ -16,8 +16,6 @@ const Header = () => {
     if (sidebar){
       sidebar.classList.toggle("closed");
     }
-   
-    
   };
   
   return (
